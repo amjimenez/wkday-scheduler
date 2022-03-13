@@ -47,8 +47,8 @@ textarea {
 }
 
 .past {
-  background-color: rgb(224, 209, 189);
-  color: rgb(11, 23, 185);
+  background-color: rgb(223, 205, 182);
+  color: white;
 }
 
 .present {
@@ -57,7 +57,7 @@ textarea {
 }
 
 .future {
-  background-color: #69AFBF;
+  background-color: #073392;
   color: white;
 }
 
