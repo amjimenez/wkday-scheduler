@@ -18,4 +18,6 @@ THEN the text for that event is saved in local storage</br>
 WHEN I refresh the page</br>
 THEN the saved events persist</br>
 
+<p><p>https://amjimenez.github.io/wkday-scheduler/
+
 <p><p><img width="640" alt="wkday-scheduler screenshot" src="https://user-images.githubusercontent.com/99158580/158081495-32e2b2bf-254c-4d4e-a67f-ab18b3a6a9ec.png">
