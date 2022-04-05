@@ -20,4 +20,4 @@ THEN the saved events persist</br>
 
 <p><p>https://amjimenez.github.io/wkday-scheduler/
 
-<p><p><img width="640" alt="wkday-scheduler screenshot" src="https://user-images.githubusercontent.com/99158580/158081495-32e2b2bf-254c-4d4e-a67f-ab18b3a6a9ec.png">
+<p><p><img width="612" alt="Screen Shot 2022-04-04 at 11 22 50 PM" src="https://user-images.githubusercontent.com/99158580/161672618-70c330aa-163f-4a0d-9ebe-2682c1c9e92f.png">
