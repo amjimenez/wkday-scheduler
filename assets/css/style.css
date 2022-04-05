@@ -8,12 +8,12 @@ h1 {
   font-family: 'Verdana', sans-serif;
 }
 
-textarea {
+textarea{
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid #88898C;
+  border-left: 1px solid black;
   padding: 10px;
 }
 
@@ -22,7 +22,7 @@ textarea {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid #88898C;
+  border-bottom: 10px solid black;
 }
 
 .description {
@@ -43,11 +43,11 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #88898C;
+  border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: rgb(223, 205, 182);
+  background-color: rgb(181, 225, 255);
   color: white;
 }
 
@@ -62,15 +62,15 @@ textarea {
 }
 
 .saveBtn {
-  border: 1px solid #88898C;
+  border: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #152C40;
+  background-color: #062c4d;
   color: white;
 }
 
 .saveBtn i:hover {
-  font-size: 25px;
+  font-size: 20px;
   transition: all .3s ease-in-out;
 }
 

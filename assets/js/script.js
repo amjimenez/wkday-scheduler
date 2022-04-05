@@ -3,7 +3,7 @@ var saveBtn = $(".saveBtn");
 // current day is displayed at the top of the calendar
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
-// each time block is color-coded to indicate whether it is in the past, present, or future
+
 function timeBlockColor() {
     var hour = moment().hours();
 
@@ -24,7 +24,7 @@ function timeBlockColor() {
 
 saveBtn.on("click", function() {
 
-    // console.log(this); //save button
+    
     var time = $(this).siblings(".hour").text();
     var plan = $(this).siblings(".plan").val();
 
