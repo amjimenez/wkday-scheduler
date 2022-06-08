@@ -1,52 +1,35 @@
-var saveBtn = $(".saveBtn");
+$('#currentDay').text(moment().format('dddd MMMM Do YYYY'));
+let $saveBtn = $('.saveBtn');
+let hour = moment().hours();
 
-// current day is displayed at the top of the calendar
-$("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
-
-
-function timeBlockColor() {
-    var hour = moment().hours();
-
-    $(".time-block").each(function() {
-        var currHour = parseInt($(this).attr("id"));
-
-        // console.log(this); //each time-block
-
-        if (currHour > hour) {
-            $(this).addClass("future");
-        } else if (currHour === hour) {
-            $(this).addClass("present");
-        } else {
-            $(this).addClass("past");
-        }
-    })
-};
-
-saveBtn.on("click", function() {
-
-    
-    var time = $(this).siblings(".hour").text();
-    var plan = $(this).siblings(".plan").val();
-
+$saveBtn.on('click', () => {
+    let time = $(this).siblings('.hour').text();
+    let plan = $(this).siblings('.plan').val();
     localStorage.setItem(time, plan);
 });
 
-function usePlanner() {
+// iterate over .hour divs
+$('.hour').each(() => {
+    let currentHour = $(this).text();
+    let currentPlan = localStorage.getItem(currentHour);
 
-    $(".hour").each(function() {
-        var currHour = $(this).text();
-        var currPlan = localStorage.getItem(currHour);
+    if (currentPlan !== null) {
+        $(this).siblings('.plan').val(currentPlan);
+    }
+});
 
-        // console.log(this);
-        // console.log(currHour);
+// iterate over each .time-block row
+$('.time-block').each(function() {
+    let currentHour = parseInt($(this).data('hour'));
+    let timeBlockClass;
 
-        if(currPlan !== null) {
-            $(this).siblings(".plan").val(currPlan);
-        }
-    });
-}
+    if (currentHour > hour) {
+        timeBlockClass = 'future';
+    } else if (currentHour === hour) {
+        timeBlockClass = 'present';
+    } else {
+        timeBlockClass = 'past';
+    }
 
-
-timeBlockColor();
-usePlanner();
-
+    $(this).addClass('past');
+});
